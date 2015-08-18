@@ -1,0 +1,37 @@
+<label for="preg" class="rem">Pregunta:</label>
+<input type="text" id="preg" name="quiz[pregunta]" value="<%= quiz.pregunta %>"/><br/>
+<label for="resp" class="rem">Respuesta:</label>
+<input type="text" id="resp" name="quiz[respuesta]" value="<%= quiz.respuesta %>"/><br/>
+<%
+var temas  = {
+    "otro" : "Otro",
+    "humanidades" : "Humanidades",
+    "ocio" : "Ocio",
+    "ciencia" : "Ciencia",
+    "tecnologia" : "Tecnología"
+};
+
+var s_tema = (typeof(quiz.tema) != 'undefined') ? quiz.tema : temas['otro'];
+%>
+<label for="tema" class="rem">Tema:</label>
+<select name="quiz[tema]" id="tema">
+    <%
+    for (tema in temas)
+    {
+        if (s_tema == tema)
+        {
+            %>
+            <option value="<%= tema %>" selected="selected"><%= temas[tema] %></option>
+            <%
+        }
+        else
+        {
+            %>
+            <option value="<%= tema %>"><%= temas[tema] %></option>
+            <%
+        }
+    }
+    %>
+</select></br/>
+<a href="/quizes"><button type="button">Cancelar</button></a>
+<input type="submit" value="Salvar">

@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font: 16px Georgia, serif;
+}
+
+#page-wrap
+{
+    margin: 2% auto;
+    color: white;
+}
+
+#page-wrap > .main
+{
+    border: 1px solid #999;
+    padding: 1%;
+    margin-bottom: 1px;
+    color: black;
+}
+
+section > div
+{
+    padding: 20px;
+}
+
+header, nav, section
+{
+    background: #eee;
+    text-align: center;
+}
+
+footer
+{
+    background: #eee;
+    text-align: center;
+}
+
+nav span
+{
+    margin: 0px 10px 0px 0px;
+}
+
+#ErrorMsgs
+{
+    color: #f61;
+    font-size: smaller;
+}
+
+.right
+{
+    float: right;
+}
+
+.no_results
+{
+    text-align: center;
+    padding: 5px 0px;
+    color: red;
+    margin: auto;
+}
+
+#c_search
+{
+    text-align: right;
+    margin-bottom: 3px;
+}
+
+#t_questions td
+{
+    text-align: left;
+}
+
+#c_author
+{
+    margin: 3px 0px;
+    background: #CCCCCC;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#c_photo
+{
+    float: left;
+    width: 12%;
+    min-height: 120px;
+    min-width: 80px;
+    padding-top: 10px;
+}
+
+#c_description
+{
+    float: right;
+    width: 85%;
+    min-height: 120px;
+}
+
+#c_photo img
+{
+    padding: 5px;
+    vertical-align: middle;
+}
+
+#c_name
+{
+    font-weight: bold;
+    text-align: left;
+}
+
+#c_name a
+{
+    outline: none;
+    text-decoration: none;
+}
+
+#c_name a:visited, #c_name a:active, #c_name a:hover
+{
+    color: black;
+    text-decoration: underline;
+}
+
+#c_biography
+{
+    text-align: justify;
+    padding: 10px 5px 10px 5px;
+}
+
+#c_biography ul
+{
+    list-style-type: disc;
+    list-style-position: outside;
+}
+
+.p_tema
+{
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+
+
